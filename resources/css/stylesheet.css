@@ -31,7 +31,7 @@ header{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: auto 0;
+
 }
 .logo img{
   height:1.5rem;
@@ -71,4 +71,79 @@ nav li{
   font-size: 2rem;
   line-height:1.2;
   background-color: white;
+}
+#icons .container{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  height:8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.icon img{
+  align-items: center;
+  height:5rem;
+
+}
+.paper img{
+
+}
+.ruler img{
+  height:3rem;
+  padding: 0 6rem;
+}
+.truck img{
+  height:3rem;
+}
+.icon-description{
+  padding-top:1.5rem;
+  text-align: center;
+  width:3.5rem;
+}
+#information{
+
+
+
+
+}
+#information .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info{
+  width:35%;
+  margin: 0 5%;
+}
+.title{
+  width: 10rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1rem;
+  padding: .5rem 1.25rem;
+}
+.info-text{
+  padding-top:1rem;
+  line-height: 1.4rem;
+
+}
+footer{
+  margin-top: 5rem;
+    background-color: azure;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+}
+footer img{
+    height: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
 }
