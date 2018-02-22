@@ -55,6 +55,17 @@ nav li{
   display: inline-block;
   padding: 1rem 1.5rem;
 }
+.nav-drop{
+  display: none;
+}
+.nav-drop a{
+  color: white;
+  text-decoration: none;
+}
+.nav-drop a:hover{
+  color: seashell;
+}
+
 .tag-line.flex-content{
   position: relative;
   background-color: inherit;
@@ -76,16 +87,16 @@ nav li{
   padding: 5rem 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .icon{
   height:8rem;
+  width: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 .icon img{
   align-items: center;
@@ -105,13 +116,7 @@ nav li{
 .icon-description{
   padding-top:1.5rem;
   text-align: center;
-  width:3.5rem;
-}
-#information{
-
-
-
-
+  width:7rem;
 }
 #information .container{
   display: flex;
@@ -123,6 +128,7 @@ nav li{
   margin: 0 5%;
 }
 .title{
+  color: white;
   width: 10rem;
   background-color: cadetblue;
   font-weight: bold;
@@ -137,13 +143,109 @@ nav li{
 }
 footer{
   margin-top: 5rem;
-    background-color: azure;
-    padding: 4rem 2rem;
-    display: flex;
-    align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
 }
 footer img{
     height: 1.5rem;
     margin-left: 2rem;
     margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px){
+.container{
+  width: 100%;
+}
+header{
+  height:20rem;
+}
+.flex-content{
+    top: 0;
+}
+.tag-line.flex-content{
+  position: absolute;
+  top: 8rem;
+  left:0rem;
+  right: 2rem;
+
+}
+.tag-line span{
+  padding:.75rem 4rem;
+  font-size: 1.33rem;
+}
+
+@media only screen and (max-width: 470px){
+.logo span{
+  display: none;
+}
+header{
+  background-position: 20%;
+  height:17rem;
+}
+header nav{
+  display:none;
+}
+.nav-drop{
+  display: inline-block;
+  padding: 1rem 1.5rem;;
+}
+.tag-line.flex-content{
+  position: relative;
+  top: 9rem;
+  left:0rem;
+  right:0rem;
+  background-color: white;
+  justify-content: center;
+}
+.tag-line span{
+  padding:1rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+#icons .container{
+  flex-direction: column;
+  padding: 3.77rem 0;
+}
+.icon{
+  padding: 1.54rem 0 0 0;
+}
+
+#information .container{
+  flex-direction: column;
+
+}
+.info{
+  width:100%;
+}
+.title{
+  width: 100%;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1rem;
+  padding: .5rem 1.25rem;
+  text-align: center;
+}
+.info-text{
+  padding:1rem .5rem 0 .5rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+footer span{
+  display: none;
+}
+footer .container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer img{
+  height: 1.5rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+
+  }
 }
