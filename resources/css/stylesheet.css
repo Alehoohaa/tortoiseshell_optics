@@ -164,8 +164,13 @@ header{
 .flex-content{
     top: 0;
 }
+.logo{
+  width: 55%;
+}
 .logo img{
   margin: 0 1rem 0 1rem;
+}
+
 }
 nav li{
   padding: 1rem .5rem;
