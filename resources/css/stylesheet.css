@@ -165,7 +165,7 @@ header{
     top: 0;
 }
 nav li{
-  padding: 1rem 1rem;
+  padding: 1rem .5rem;
 }
 .tag-line.flex-content{
   position: absolute;
